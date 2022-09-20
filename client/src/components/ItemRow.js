@@ -5,7 +5,7 @@ function ItemRow({ id, name, stock, capacity, setOrderAmounts }) {
     const amount = parseInt(event.target.value);
 
     if (amount > max) {
-      alert("The most you can order for this item is " + max + " or less.");
+      alert("The most you can order for this item is " + max + ".");
       event.target.value = 0;
 
       return;
